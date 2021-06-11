@@ -1,14 +1,9 @@
 import React from "react";
 import "./App.css";
-import Sobre from "./objects/Sobre";
-import Logo from "./objects/Logo";
+import Header from "./components/Header";
+
 function App() {
-  return (
-    <>
-      <Logo />
-      <Sobre />
-    </>
-  );
+  return <Header />;
 }
 
 export default App;
