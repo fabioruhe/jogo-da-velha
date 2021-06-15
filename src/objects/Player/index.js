@@ -1,22 +1,17 @@
-import React from 'react'
-import './styles.css'
-import PlayerX from '../../img/playerX.png'
-import PlayerO from '../../img/circle.png'
+import React from "react";
+import "./styles.css";
+import playerX from "../../img/playerX.png";
+import playerO from "../../img/Circle.png";
 
+const Player = ({ player }) => {
+  const players = [];
+  players["x"] = playerX;
+  players["o"] = playerO;
 
-const Player = (props) => {
-   
-   let player = '';
-   if(props.player === 'x'){
-       player = PlayerX
-   }else if (props.player === 'o'){
-       player = PlayerO
-   }
-   
-    return(
-        <button className="player">
-            <img src={player} alt="Jogador X"></img>
-        </button>
-    )
-}
+  return (
+    <button className="player">
+      <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`}></img>
+    </button>
+  );
+};
 export default Player;
