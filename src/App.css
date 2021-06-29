@@ -1,8 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+.app{
+  text-align: center;
+}
+
+.app > .header{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  margin: 0 auto 85px;
+}
+.app > .board{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90vw;
+  height: 90vw;
+}
+
 .action {
   font: bold 14px "Montserrat", sans-serif;
   color: #707070;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
